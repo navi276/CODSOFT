@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main(){
+     char op;
+     float n1,n2;
+
+     cout<<"Enter an Operator(+,-,*,/): ";
+     cin>>op;
+
+     cout<<"Enter two numbers: ";
+     cin>>n1>>n2;
+
+     if(op=='+'){
+          cout<<n1<<"+"<<n2<<"="<<n1+n2<<endl;
+     }
+     else if(op='-'){
+          cout<<n1<<"-"<<n2<<"="<<n1-n2<<endl;
+     }
+     else if(op='*'){
+          cout<<n1<<"*"<<n2<<"="<<n1*n2<<endl;
+     }
+     else if(op='/'){
+          if(n2!=0){
+              cout<<n1<<"/"<<n2<<"="<<n1/n2<<endl;
+     }else{
+              cout<<"Error!"<<endl;
+     } 
+     }
+     else{
+          cout<<"Invaliid Error"<<endl;
+     }
+     return 0;
+}
+     
+
+     
